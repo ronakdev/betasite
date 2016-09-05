@@ -1,6 +1,10 @@
 @import 'https://fonts.googleapis.com/css?family=Lato|Open+Sans|Raleway';
 @import url("//netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap.min.css");
 
+body {
+    background-color: #efefef;
+    font-family: 'Raleway', sans-serif;
+}
 /* Header Code */
 .splash {
     background-color: #efefef;
@@ -51,7 +55,7 @@
 
 /* Mobile*/
 
-@media screen and (min-width: 980) {
+@media screen and (max-width: 980px) {
     .desktoponly {
         display: none;
     }
@@ -59,4 +63,38 @@
     .splash-col {
         width: 80vw;
     }
+    .splash {
+    background-image: url("https://media.licdn.com/mpr/mpr/shrinknp_200_200/AAEAAQAAAAAAAAk9AAAAJDdjM2VmNDhjLTliMGItNGYyYS1iM2NmLWQ0YTYxNDc5MzU0ZA.jpg");
+      background-repeat: no-repeat;
+      background-size: cover;
+    }
+}
+
+.about {
+    width: 100vw;
+    height: 150%;
+    background-color: #FB424A;
+    
+    font-family: 'Raleway', sans-serif;
+    color: white;
+    text-align: center;
+}
+
+.about h1 {
+    font-size: 5em;
+}
+.about p {
+    font-size: 2em;
+}
+
+.resume {
+    text-align: center;
+}
+#image {
+    width: 60vw;
+    height: 40vh;
+         background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-image: url("../img/resume.png");
 }

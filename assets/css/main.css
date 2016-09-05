@@ -24,7 +24,12 @@ body {
     top: 50%;
 
 }
+.desktoponly {
+float: right;
+    margin-right: 10vw;
+padding-right: 50px;}
 .text-wrapper {
+    padding-left: 50px;
       -webkit-transform: translateY(50%);
   -ms-transform: translateY(50%);
   transform: translateY(50%);

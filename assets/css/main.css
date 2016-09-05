@@ -67,6 +67,7 @@ body {
     background-image: url("https://media.licdn.com/mpr/mpr/shrinknp_200_200/AAEAAQAAAAAAAAk9AAAAJDdjM2VmNDhjLTliMGItNGYyYS1iM2NmLWQ0YTYxNDc5MzU0ZA.jpg");
       background-repeat: no-repeat;
       background-size: cover;
+        
     }
     .big {
         font-size: 3em;
@@ -78,7 +79,7 @@ body {
 
 .about {
     width: 100vw;
-    height: 150%;
+    height: 200%;
     background-color: #FB424A;
     
     font-family: 'Raleway', sans-serif;
@@ -93,6 +94,38 @@ body {
     font-size: 2em;
 }
 
+.projects {
+    height: 100vh;
+    width: 100vw;
+    background-color: #161719;
+    color: white;
+    text-align: center;
+}
+.projects h1 {
+    font-size: 1em;
+}
+.project {
+    background-image: linear-gradient(rgba(0,0,0,0.6),rgba(0,0,0,0.6));
+    -webkit-transition: background-image 2s; /* For Safari 3.1 to 6.0 */
+    transition: background-image 2s;
+    height: 30vh;
+}
+.project:hover {
+    background-image: linear-gradient(rgba(246,43,54,0.4),rgba(246,43,54,0.4));
+   
+}
+.project p {
+    opacity: 0;
+      -webkit-transition: 2s; /* For Safari 3.1 to 6.0 */
+    transition: 2s;
+}
+.project p:hover {
+    opacity: 1;
+}
+#title {
+    font-size: 5em;
+}
+
 .resume {
     text-align: center;
 }
@@ -102,5 +135,5 @@ body {
          background-attachment: fixed;
     background-repeat: no-repeat;
     background-size: cover;
-    background-image: url("../img/resume.png");
+    background-image: linear-gradient(rgba(0,0,0,0.6),rgba(0,0,0,0.6)),url("../img/resume.png");
 }

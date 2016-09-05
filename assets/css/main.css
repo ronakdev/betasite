@@ -68,6 +68,12 @@ body {
       background-repeat: no-repeat;
       background-size: cover;
     }
+    .big {
+        font-size: 3em;
+    }
+    .small {
+        font-size: 1em;
+    }
 }
 
 .about {

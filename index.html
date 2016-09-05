@@ -7,7 +7,7 @@
         <link rel=stylesheet type="text/css" href="assets/css/hover.css" />
         <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" />
         <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet" media="all">
-
+        <link href="assets/css/animate.css" rel="stylesheet" type="text/css" />        
         <link rel="stylesheet" type="text/css" href="assets/css/main.css" />
         <!--TODO:
 Include <meta> tags-->
@@ -15,93 +15,126 @@ Include <meta> tags-->
     <body>
         <!--Navigation Bar-->
         <div id="container">
-            <header class="splash"> 
+            <header class="splash">
 
                 <div class="row">
-                    <div class="col-md-5 col-sm-10 splash-col text-wrapper" id="alwaysvisible">
+                    <div class="col-md-1 col-sm-2 col-xs-2"></div>
+                    <div class="col-md-5 col-sm-10 col-xs-10 splash-col text-wrapper" id="alwaysvisible">
                         <p><span class="small">Hi, I'm </span><br> <span class="big">Ronak Shah</span></p>
-
-                        <a href="#about" target="_blank" class="hvr-sweep-to-right button"><span class="fa fa-user"></span> About Me</a>
-                        <a href="resume.pdf" target="_blank" class="hvr-sweep-to-right button"><span class="fa fa-file-text"></span> View Resume</a>
-                        <a href="https://github.com/ronakdev" target="_blank" class="hvr-sweep-to-right button"><span class="fa fa-github"></span> View Github</a>
+                       
+                        <div class="animate-svg-wrapper">
+                            <svg height="40" width="150" xmlns="http://www.w3.org/2000/svg">
+                                <rect id="animate-shape" height="40" width="150" />
+                                <div id="animate-text">
+                                    <a href="#about"><span class="animate-spot"></span><span class="fa fa-user"></span> About Me</a>
+                                </div>
+                            </svg>
+                        </div>
+                        
+                        <div class="animate-svg-wrapper">
+                            <svg height="40" width="150" xmlns="http://www.w3.org/2000/svg">
+                                <rect id="animate-shape" height="40" width="150" />
+                                <div id="animate-text">
+                                    <a href=""><span class="animate-spot"></span><span class="fa fa-file-text"></span> View Resume</a>
+                                </div>
+                            </svg>
+                        </div>
+                        
+                        <div class="animate-svg-wrapper">
+                            <svg height="40" width="150" xmlns="http://www.w3.org/2000/svg">
+                                <rect id="animate-shape" height="40" width="150" />
+                                <div id="animate-text">
+                                    <a href=""><span class="animate-spot"></span><span class="fa fa-github"></span> Github</a>
+                                </div>
+                            </svg>
+                        </div>
+                        
 
                     </div>
 
-                    <div class="col-md-5  col-sm-0 splash-col desktoponly">
+                    <div class="col-md-5  col-sm-0 col-xs-0 splash-col desktoponly">
                         <img class="img-circle cover" src="https://media.licdn.com/mpr/mpr/shrinknp_200_200/AAEAAQAAAAAAAAk9AAAAJDdjM2VmNDhjLTliMGItNGYyYS1iM2NmLWQ0YTYxNDc5MzU0ZA.jpg" alt="Portrait Of Me">
                     </div>
 
                 </div>
             </header>
-        
-        <div id="about" class="about row">
-            <h1>About Me</h1>
 
-            <p>
-                I'm a high school programmer
-                interested in internships and part time
-                job offers.
-            </p>
-            
-            <a href="#projects" class="hvr-rectangle-out button">See Projects</a>
-        </div>
+            <div id="about" class="about row">
+                <h1>About Me</h1>
 
-        <div class="projects row">
-            <h1 id="title">Projects</h1>
-            
-            <div class="row">
-                <div class="col-md-1"></div>
-                <div class="col-md-3 project">
-                    <h1>Project Name</h1>
-                    
-                    <p>
-                        Amazing Description That Will Only Show On Hover So Yeah.
-                         Amazing Description That Will Only Show On Hover So Yeah.
-                         Amazing Description That Will Only Show On Hover So Yeah.
-                         Amazing Description That Will Only Show On Hover So Yeah.
-                         Amazing Description That Will Only Show On Hover So Yeah.
-                        
-                    </p>
-                </div>
+                <p>
+                    I'm a high school programmer
+                    interested in internships and part time
+                    job offers.
+                </p>
                 
-                <div class="col-md-4 project">
-                    <h1>Project Name</h1>
-                    
-                    <p>
-                        Amazing Description That Will Only Show On Hover So Yeah.
-                         Amazing Description That Will Only Show On Hover So Yeah.
-                         Amazing Description That Will Only Show On Hover So Yeah.
-                         Amazing Description That Will Only Show On Hover So Yeah.
-                         Amazing Description That Will Only Show On Hover So Yeah.
-                        
-                    </p>
-                </div>
+                <div class="animate-svg-wrapper">
+                            <svg height="40" width="150" xmlns="http://www.w3.org/2000/svg">
+                                <rect id="animate-shape" height="40" width="150" />
+                                <div id="animate-text">
+                                    <a href="#projects"><span class="animate-spot"></span><span class="fa fa-user"></span> See Projects</a>
+                                </div>
+                            </svg>
+                        </div><br><br>
                 
-                <div class="col-md-3 project">
-                    <h1>Project Name</h1>
-                    
-                    <p>
-                        Amazing Description That Will Only Show On Hover So Yeah.
-                         Amazing Description That Will Only Show On Hover So Yeah.
-                         Amazing Description That Will Only Show On Hover So Yeah.
-                         Amazing Description That Will Only Show On Hover So Yeah.
-                         Amazing Description That Will Only Show On Hover So Yeah.
-                        
-                    </p>
-                </div>
-                                <div class="col-md-1"></div>
+            </div>
 
+            <div class="projects row" id="projects">
+                <h1 id="title">Projects</h1>
+
+                <div class="row">
+                    <div class="col-md-1"></div>
+                    <div class="col-md-3 project">
+                        <h1>Project Name</h1>
+
+                        <p>
+                            Amazing Description That Will Only Show On Hover So Yeah.
+                            Amazing Description That Will Only Show On Hover So Yeah.
+                            Amazing Description That Will Only Show On Hover So Yeah.
+                            Amazing Description That Will Only Show On Hover So Yeah.
+                            Amazing Description That Will Only Show On Hover So Yeah.
+
+                        </p>
+                    </div>
+
+                    <div class="col-md-4 project">
+                        <h1>Project Name</h1>
+
+                        <p>
+                            Amazing Description That Will Only Show On Hover So Yeah.
+                            Amazing Description That Will Only Show On Hover So Yeah.
+                            Amazing Description That Will Only Show On Hover So Yeah.
+                            Amazing Description That Will Only Show On Hover So Yeah.
+                            Amazing Description That Will Only Show On Hover So Yeah.
+
+                        </p>
+                    </div>
+
+                    <div class="col-md-3 project">
+                        <h1>Project Name</h1>
+
+                        <p>
+                            Amazing Description That Will Only Show On Hover So Yeah.
+                            Amazing Description That Will Only Show On Hover So Yeah.
+                            Amazing Description That Will Only Show On Hover So Yeah.
+                            Amazing Description That Will Only Show On Hover So Yeah.
+                            Amazing Description That Will Only Show On Hover So Yeah.
+
+                        </p>
+                    </div>
+                    <div class="col-md-1"></div>
+
+                </div>
+            </div>
+
+
+            <div class="resume row">
+                <h1>Like What You See?</h1>
+                <center>
+                    <div id="image"></div>
+                </center>
             </div>
         </div>
-        
-        
-        <div class="resume row">
-            <h1>Like What You See?</h1>
-            <center>
-                <div id="image"></div>
-            </center>
-        </div>
-</div>
     </body>
     <!--Imports-->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js">

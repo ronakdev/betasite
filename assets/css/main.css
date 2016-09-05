@@ -60,6 +60,10 @@ body {
         display: none;
     }
     
+    .text-wrapper p {
+        color: #14ACF8;
+    }
+    
     .splash-col {
         width: 80vw;
     }
@@ -78,7 +82,6 @@ body {
 }
 
 .about {
-    width: 100vw;
     height: 200%;
     background-color: #FB424A;
     
@@ -96,7 +99,7 @@ body {
 
 .projects {
     height: 100vh;
-    width: 100vw;
+    
     background-color: #161719;
     color: white;
     text-align: center;
